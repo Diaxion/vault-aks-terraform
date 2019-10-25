@@ -1,5 +1,10 @@
 # Build our AKS cluster
 
+# Some relevant useful doco
+# About the AKS            https://docs.microsoft.com/en-gb/azure/aks/
+# About Managed Identities https://docs.microsoft.com/en-us/azure/aks/use-managed-identity
+# Read this re the Service Priniciple Kube needs https://docs.microsoft.com/en-gb/azure/aks/kubernetes-service-principal
+
 resource "azurerm_kubernetes_cluster" "vault-aks-terraform" {
     name = var.prefix
     location = azurerm_resource_group.rg.location
