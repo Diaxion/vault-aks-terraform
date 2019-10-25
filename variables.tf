@@ -6,6 +6,11 @@ variable "environment" {
   description = "The SDLC environment for this code."
 }
 
+# The list of regions is available at https://gist.github.com/ausfestivus/04e55c7d80229069bf3bc75870630ec8
+variable "location" {
+  description = "The location/region where the solution will be created."
+}
+
 # -----------------------------------------------------------------------------
 # other configuration
 # -----------------------------------------------------------------------------
