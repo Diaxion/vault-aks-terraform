@@ -1,0 +1,16 @@
+# ignore all markdown files who's name starts with scratch
+scratch*.md
+
+# ignore any thing with credentials in the name
+*Credentials*
+*credentials*
+creds/*
+
+# ignore terraform related files
+.terraform
+*.tfstate
+*.tfstate.backup
+#*.tfvars
+
+# ignore mac related special files
+.DS_Store
