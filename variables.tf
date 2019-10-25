@@ -1,3 +1,7 @@
+# -----------------------------------------------------------------------------
+# foundation configuration
+# -----------------------------------------------------------------------------
+
 variable "prefix" {
   description = "Default prefix to use with your resource names."
 }
@@ -9,6 +13,18 @@ variable "environment" {
 # The list of regions is available at https://gist.github.com/ausfestivus/04e55c7d80229069bf3bc75870630ec8
 variable "location" {
   description = "The location/region where the solution will be created."
+}
+
+# -----------------------------------------------------------------------------
+# kube configuration
+# -----------------------------------------------------------------------------
+
+variable "kubernetes_client_id" {
+  description = "TODO"
+}
+
+variable "kubernetes_client_secret" {
+  description = "TODO"
 }
 
 # -----------------------------------------------------------------------------
@@ -38,3 +54,7 @@ variable "ssh_key_public" {}
 variable "ubuntu_user_secret" {}
 
 variable "mssql_user_secret" {}
+
+variable "dns_zone_name" {}
+
+variable "dns_zone_rg" {}

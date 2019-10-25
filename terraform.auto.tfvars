@@ -3,8 +3,15 @@
 # -----------------------------------------------------------------------------
 
 prefix = "vault-aks-terraform"
-location = "australiaeast"
 environment = "develop"
+location = "australiaeast"
+
+# -----------------------------------------------------------------------------
+# kube configuration
+# -----------------------------------------------------------------------------
+
+kubernetes_client_id = ""
+kubernetes_client_secret = ""
 
 # -----------------------------------------------------------------------------
 # other configuration items
@@ -13,5 +20,5 @@ environment = "develop"
 ssh_key_public = "{ENTER YOUR VALUE HERE}"
 ubuntu_user_secret = "{ENTER YOUR VALUE HERE}"
 mssql_user_secret = "{ENTER YOUR VALUE HERE}"
-#dns_zone_name = "cloud00.bestfamily.id.au" # The DNS domain under which we do want our DNS records to be created.
-#dns_zone_rg = "rgDNSZones" # The resource group name that the above DNS domain is in.
+dns_zone_name = "cloud00.bestfamily.id.au" # The DNS domain under which we do want our DNS records to be created.
+dns_zone_rg = "rgDNSZones" # The resource group name that the above DNS domain is in.
