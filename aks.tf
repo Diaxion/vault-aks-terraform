@@ -34,6 +34,8 @@ resource "azurerm_kubernetes_cluster" "vault-aks-terraform" {
 
             server_app_id     = var.kubernetes_client_id
             server_app_secret = var.kubernetes_client_secret
+
+            tenant_id = var.aad_tenant_id
         }
     }
     tags     = var.tags

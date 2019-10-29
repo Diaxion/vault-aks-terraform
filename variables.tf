@@ -27,6 +27,10 @@ variable "kubernetes_client_secret" {
   description = "TODO"
 }
 
+variable "aad_tenant_id" {
+  description = "The Tenant ID for the Kube SP"
+}
+
 # -----------------------------------------------------------------------------
 # other configuration
 # -----------------------------------------------------------------------------

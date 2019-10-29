@@ -10,8 +10,9 @@ location = "australiaeast"
 # kube configuration
 # -----------------------------------------------------------------------------
 
-kubernetes_client_id = ""
-kubernetes_client_secret = ""
+# kubernetes_client_id = ""
+# kubernetes_client_secret = ""
+aad_tenant_id = "a5aa424e-5d6f-47c9-bf70-a1310f4be302"
 
 # -----------------------------------------------------------------------------
 # other configuration items
